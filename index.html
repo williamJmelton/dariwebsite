@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <title>Dari Wholesales</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <script src="//mozilla.github.io/pdf.js/build/pdf.js"></script>
+</head>
+
+<body>
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container">
+      <!-- <a id="logo-container" href="#" class="brand-logo">Dari Wholesales</a> -->
+      <img height="100%" class="logo" src="/img/logo.png">
+      <ul class="right hide-on-med-and-down">
+        <li>
+          <a href="/index.html">Home</a>
+        </li>
+        <li>
+          <a href="/open-acct.html">New Customer</a>
+        </li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li>
+          <a href="/index.html">Home</a>
+        </li>
+        <li>
+          <a href="/open-acct.html">New Customer</a>
+        </li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger">
+        <i class="material-icons">menu</i>
+      </a>
+    </div>
+  </nav>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br>
+      <br>
+      <h1 class="header center orange-text">Everything Your Convenience Store Needs</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">Open An Account Today!!!</h5>
+      </div>
+      <div class="row center">
+        <a href="/open-acct.html" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
+      </div>
+      <br>
+      <br>
+
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <!-- <h2 class="center light-blue-text">
+              <i class="material-icons">flash_on</i>
+            </h2> -->
+            <h5 class="center">Cigars</h5>
+
+            <p class="light">Carrying a wide variety of popular cigar brands such as Swisher Sweet, Game, White Owl, Phillies, Optimo, Ez
+              Roll, Show, Good Times, Black & Mild, Backwoods, and more. We are certian that we can meet all of your cigar
+              needs.
+            </p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <!-- <h2 class="center light-blue-text">
+              <i class="material-icons">group</i>
+            </h2> -->
+            <h5 class="center">General Goods</h5>
+
+            <p class="light">We carry everything your store needs for general goods. Medicines, trinkets, automotive supplies, t-shirts, hat,
+              gloves, health drinks, kids toys, and household items. </p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <!-- <h2 class="center light-blue-text">
+              <i class="material-icons">settings</i>
+            </h2> -->
+            <h5 class="center">Cigarettes</h5>
+
+            <p class="light">We carry all major brands of cigarettes for your store. Marlboro, Time, Pall Mall, Native, Maverick, Bailey's,
+              Basic, Mistys, and many, many more!</p>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="row center" id="sales-page">
+        <div class="col s12 m12">
+          <h1 class="header center orange-text">January Sales Page</h1>
+        </div>
+        <div class="col s12 m12">
+          <iframe src="/ViewerJS/#../pdf/january.pdf" class="iframe" allowfullscreen webkitallowfullscreen></iframe>
+        </div>
+      </div> -->
+
+    </div>
+
+  </div>
+
+  <!-- PDF.js -->
+  <div class="row center container pdf-controlls">
+    <div class="col white s12 m12">
+      <a id="prev" class="waves-effect waves-white btn-flat">
+        <i class="material-icons left">arrow_back</i>back</a>
+      <a id="next" class="waves-effect waves-white btn-flat">
+        <i class="material-icons left">arrow_forward</i>forward</a>
+      <a id="increaseZoom" class="waves-effect waves-black btn-flat">
+        <i class="material-icons left">zoom_in</i>zoom-in</a>
+      <a id="decreaseZoom" class="waves-effect waves-black btn-flat">
+        <i class="material-icons left">zoom_out</i>zoom-out</a>
+      &nbsp; &nbsp;
+      <span>Page:
+        <span id="page_num"></span> /
+        <span id="page_count"></span>
+      </span>
+    </div>
+
+    <canvas id="the-canvas"></canvas>
+  </div>
+
+  <br>
+  <br>
+  </div>
+
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">In business for 17 years, Yousef Dari started this company from the ground up. Begining with only a truck and some
+            general goods, he made Dari Wholesales what it is today. Backed with 17 years experience, we look forward to
+            serving you.
+          </p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li>
+              <a class="white-text" href="#!">Link 1</a>
+            </li>
+            <li>
+              <a class="white-text" href="#!">Link 2</a>
+            </li>
+            <li>
+              <a class="white-text" href="#!">Link 3</a>
+            </li>
+            <li>
+              <a class="white-text" href="#!">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li>
+              <a class="white-text" href="#!">Link 1</a>
+            </li>
+            <li>
+              <a class="white-text" href="#!">Link 2</a>
+            </li>
+            <li>
+              <a class="white-text" href="#!">Link 3</a>
+            </li>
+            <li>
+              <a class="white-text" href="#!">Link 4</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        Made by
+        <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/pdfConfig.js"></script>
+
+</body>
+
+</html>
