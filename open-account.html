@@ -23,7 +23,7 @@
           <a href="/index.html">Home</a>
         </li>
         <li>
-          <a href="/index.html">New Customer</a>
+          <a href="/open-account.html">New Customer</a>
         </li>
       </ul>
 
@@ -32,7 +32,7 @@
           <a href="/index.html">Home</a>
         </li>
         <li>
-          <a href="/open-acct.html">New Customer</a>
+          <a href="/open-account.html">New Customer</a>
         </li>
       </ul>
       <a href="#" data-target="nav-mobile" class="sidenav-trigger">
@@ -60,15 +60,14 @@
   <!-- Account Sign-up Form -->
   <div class="container">
     <div class="row">
-      <form id="gform" enctype="multipart/form-data" method="POST" action="https://script.google.com/macros/s/AKfycbwXmyvfNEWTt9u8MxPlRsmiUQxPFfVG9eq0ay2XMlTyal2rQDTo/exec"
-        class="col s12">
+      <form enctype="multipart/form-data" method="POST" action="send-form.php" class="col s12">
         <div class="row">
           <div class="input-field col s6 m6">
-            <input name="First" id="first_name" type="text" class="validate">
+            <input name="first_name" id="first_name" type="text" class="validate">
             <label for="first_name">First Name</label>
           </div>
           <div class="input-field col s6 m6">
-            <input name="Last" id="last_name" type="text" class="validate">
+            <input name="last_name" id="last_name" type="text" class="validate">
             <label for="last_name">Last Name</label>
           </div>
         </div>
@@ -80,51 +79,113 @@
         </div>
         <div class="row">
           <div class="input-field col s12 m12">
-            <input name="store_name" id="store_name" type="text">
+            <input name="store_name" id="store_name" type="text" class="validate">
             <label for="store_name">Store Name</label>
           </div>
         </div>
-        <div class="row">
-          <div class="input-field col s6 m6">
-            <input placeholder="xxx-xxx-xxxx" name="cell_number" id="cell_number" type="tel" pattern="^\d{3}-\d{3}-\d{4}$" >
-            <label for="cell_number">Cellphone Number</label>
+        <!-- <div class="row">
+          <div class="input-field col s12 m12">
+            <input type="hidden" name="MAX_FILE_SIZE" value="100000">
+            <input name="userfile" type="file">
+            <label for="file">Upload your drivers license.</label>
           </div>
-          <div class="input-field col s6 m6">
-            <input placeholder="xxx-xxx-xxxx" name="store_number" id="store_number" type="tel" pattern="^\d{3}-\d{3}-\d{4}$" >
-            <label for="store_number"> Store Telephone Number</label>
+        </div> -->
+        <div class="row">
+          <div class="file-field input-field col s12 m12">
+            <div class="btn">
+              <span>File</span>
+              <input type="file">
+            </div>
+            <div class="file-path-wrapper">
+              <input class="file-path validate" type="text">
+            </div>
           </div>
         </div>
         <div class="row">
           <div class="input-field col s6 m6">
-            <input name="street" id="street" type="text" >
+            <input placeholder="xxx-xxx-xxxx" name="cell_number" id="cell_number" type="tel" pattern="^\d{3}-\d{3}-\d{4}$">
+            <label for="cell_number">Cellphone Number</label>
+          </div>
+          <div class="input-field col s6 m6">
+            <input placeholder="xxx-xxx-xxxx" name="phone_number" id="phone_number" type="tel" pattern="^\d{3}-\d{3}-\d{4}$">
+            <label for="phone_number"> Store Telephone Number</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s6 m6">
+            <input name="street" id="street" type="text">
             <label for="street">Street</label>
           </div>
           <div class="input-field col s6 m6">
-            <input name="city" id="city" type="text" >
+            <input name="city" id="city" type="text">
             <label for="city">City</label>
           </div>
           <div class="input-field col s6 m6">
-            <input name="state" id="state" type="text" >
+            <input name="state" id="state" type="text">
             <label for="state">State</label>
           </div>
           <div class="input-field col s6 m6">
-            <input name="zip" id="zip" type="text" >
+            <input name="zip" id="zip" type="text">
             <label for="zip">Zip Code</label>
           </div>
         </div>
         <div class="row">
           <div class="input-field col s6 m6">
-            <input name="tax_id" id="tax_id" type="text" pattern="^\d{9}$" >
+            <input name="tax_id" id="tax_id" type="text" pattern="^\d{9}$">
             <label for="tax_id">Tax ID Number</label>
           </div>
           <div class="input-field col s6 m6">
-            <input name="license_number" id="license_number" type="text" >
+            <input name="license_number" id="license_number" type="text">
             <label for="license_number">Driver's License Number</label>
           </div>
         </div>
         <div class="row center">
           <div class="col s12 m12">
-            <button id="submit-form-button" type="submit" class="btn-large waves-effect waves-light green">Submit</button>
+              <h1> Unconditional Guaranty of Account</h1> 
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12 m12">
+            <p>In consideration of your agreeing to sell groceries, restaurant supplies, food stuff and other items to my business,
+              on such credit or cash terms as you may extend from time to time, I ( we ) hereby, individually and jointly,
+              personally and unconditionally guarantee the payment by said business of any past due account ( including dishonored
+              checks ) with you, this unconditional guaranty being with the following understanding:</p>
+
+            <ol start="1">
+              <li>I ( we ) may at any time terminate this guaranty by written certified letter to you. Upon such notice of termination
+                of this guaranty, this guaranty shall remain in full force and effect as to all obligations of said business,
+                which are still unpaid at the time of such notice. If there are more than one of the undersigned, each shall
+                remain liable on this guaranty until such ahas given his separate written certified letter to you.
+              </li>
+              <li>This guaranty shall apply to all indebtedness of said business to you and shall be binding upon the heirs,
+                administrators, executors, successors and assigns of the guarantor, and shall insure to the benefit of you,
+                your successors and assigns
+              </li>
+              <li>All open account charges are due and payable per terms of invoice
+              </li>
+              <li>My ( our ) liability under the guaranty shall become absolute upon said business failing to pay any obligation
+                to you within five ( 5 ) days of your having remitted a statement to it, and you shall not be required to
+                make any further collection efforts from said business before being able to fully and absolutely enforce
+                this guaranty against me ( us ).
+              </li>
+              <li>Any amounts not paid per these terms are subject to 18% annum service charge ( payable weekly from the date
+                of purchase ) until paid.
+              </li>
+              <li>If it becomes necessary to place the collection of the obligations of said business to you in the hands of
+                an attorney, I ( we ) will pay any collection expenses, including attorney fees that may become necessary
+                to effect collection of this account.
+              </li>
+              <li>The undersigned(s) does hereby acknowledge full and ample consideration for this execution of this guaranty,
+                and acknowledge that ( we ) have to defense to the validity of this guaranty.
+              </li>
+            </ol>
+
+            <p>Witness my ( our ) hand(s) and seal(s) the date above written.</p>
+          </div>
+        </div>
+        <div class="row center">
+          <div class="col s12 m12">
+            <button name="send" id="submit-form-button" type="submit" class="btn-large waves-effect waves-light green">Submit</button>
             <button type="reset" class="btn-large waves-effect waves-light red">Clear</button>
           </div>
         </div>
@@ -203,10 +264,9 @@
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
   <script src="js/pdfConfig.js"></script>
-  <script type="text/javascript" src="/form-submission-handler.js"></script>
-  <script src="/upload.php"></script>
-  <script src="/js/jquery.validate.js"></script>
-  <script src="/js/form-validator.js"></script>
+  <!-- <script type="text/javascript" src="/form-submission-handler.js"></script> -->
+  <!-- <scrispt src="/js/jquery.validate.js"></script> -->
+  <!-- <script src="/js/form-validator.js"></script> -->
 
 </body>
 
